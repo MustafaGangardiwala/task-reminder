@@ -25,7 +25,7 @@
         <tr>
             <td>
                 <form action="/done/{{task.id}}" method="POST">
-                    {% if task.task_status %}
+                    {% if task.status %}
                         <input type="checkbox" onChange="this.form.submit()" id="done" name="done" checked>
                     {% else %}
                         <input type="checkbox" onChange="this.form.submit()" id="done" name="done">
